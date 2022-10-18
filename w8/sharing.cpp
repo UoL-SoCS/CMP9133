@@ -2,14 +2,12 @@
 #include <thread>
 
 void hello() {
-    
     for (int i=0; i<100; i++) {
     std::cout << "hello() i=" << i << std::endl;
     }
 }
 
 int main() {
-    
     std::thread t(&hello);
     
     for (int i=0; i<100; i++) {

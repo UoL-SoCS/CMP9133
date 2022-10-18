@@ -8,22 +8,19 @@ std::mutex mu;  // In computer science, a lock or mutex is a synchronization pri
                 // a mechanism that enforce limits on access to a resource when there are many threads of execution (Wikipedia)
 
 void shared_print(string msg, int id){
-
     std::lock_guard<std::mutex> guard(mu);  // To handle with exception between LOCK and UNLOCK
     mu.lock();  // LOCK the mutex
-    std::cout << msg << std::endl;
+    std::cout << msg << id << std::endl;
     mu.unlock(); // UNLOCK the mutex
 }                
 
 void count_function(){
-
     for (int i = 0; i > -100; i--){
-        shared_print(string("Front t1: "), i);
+        shared_print(string("From t1: "), i);
     }
 }
 
 int main(){
-
     std::cout << "Main thread ID: " << std::this_thread::get_id() << std::endl;
 
     std::thread t1(count_function);
