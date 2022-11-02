@@ -31,7 +31,7 @@ int main() {
     
     std::thread t1(function_1);  // t1 starts running
     
-    for (int i = 0; i < 1000; i++){
+    for (int i = 0; i < 100; i++){
         std::cout << "From main: i = " << i << std::endl;
     }
 
