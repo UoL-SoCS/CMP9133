@@ -1,7 +1,7 @@
 This repository contains the code samples used as part of the module CMP9133M - Advanced Programming, fall term 2022 at the University of Lincoln (UK).
 
 
-### REequirements
+### Reequirements
 
 You can simply download the zip of this repository by clicking on this [link](https://github.com/LCAS/CMP9133M/archive/refs/heads/master.zip). 
 

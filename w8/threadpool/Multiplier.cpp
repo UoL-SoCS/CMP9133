@@ -1,8 +1,8 @@
 #include <thread>
 #include <iostream>
 #include <time.h>
-#include <Multiplier.h>
-#include <ThreadPool.h>
+#include "Multiplier.h"
+#include "ThreadPool.h"
 
 #define NUM_MATRIX_MULT 10
 
