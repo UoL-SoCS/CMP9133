@@ -15,5 +15,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             data = conn.recv(1024)
             if not data:
                 break
-            my_dict = json.loads(data)
+            # my_dict = json.loads(data)
+            my_dict = data
             print("I've received the following: ", my_dict)

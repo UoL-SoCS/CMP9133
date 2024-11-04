@@ -21,7 +21,7 @@ int main() {
     std::future<int> futObj = prom.get_future();
     std::thread t(printline, std::ref(futObj));
     std::cout << "Stopping main thread... " << std::endl;
-    prom.set_value(15);
+    // prom.set_value(15);
     t.join();
   return 0;
 }

@@ -9,6 +9,6 @@ def square(n):
 
 if __name__ == "__main__":
    with ProcessPoolExecutor(max_workers = 3) as executor:
-        results = executor.map(square, values)
-        for result in results:
-            print(result)
+        print(executor.map(square, values))
+      #   for result in results:
+      #       print(result)

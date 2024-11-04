@@ -10,3 +10,4 @@ def my_function():
 if __name__ == "__main__":
     my_thread = threading.Thread(target=my_function, daemon=True)
     my_thread.start()
+    print("main thread")

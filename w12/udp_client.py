@@ -6,5 +6,5 @@ PORT = 65432
 
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.sendto(b'Hello, world', (HOST, PORT))
-    data = s.recvfrom(1024)
+    data = s.recvfrom(8)
     print('Message from server:', repr(data))

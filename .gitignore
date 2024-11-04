@@ -1,1 +1,9 @@
 .vscode
+**/output/
+
+# Ignore all executables
+**
+!**/*.cpp
+!**/*.h
+!**/*.md
+``

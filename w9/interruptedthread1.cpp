@@ -20,7 +20,7 @@ int main() {
   std::thread t(&printline, std::move(futureObj));
   std::this_thread::sleep_for(std::chrono::seconds(5));
   std::cout << "Stopping thread... " << std::endl;
-  exitSignal.set_value();
+  // exitSignal.set_value();
   t.join();
   return 0;
 }

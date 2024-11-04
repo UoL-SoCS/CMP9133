@@ -12,7 +12,7 @@ void safe_increment() {
     std::unique_lock<std::mutex> lock(mtx);
     cv.wait(lock, []{ return true; });
     count++;
-    mtx.unlock();
+    // mtx.unlock();
     std::this_thread::sleep_for(std::chrono::seconds(1));
     std::cout << std::this_thread::get_id() << ": " << count << '\n';
 }

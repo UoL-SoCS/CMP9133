@@ -13,7 +13,7 @@ void safe_increment() {
     cv.wait(lock, []{ return ready==true; });
     try{
         count++;
-        throw count;
+        // throw count;
         mtx.unlock();
         std::this_thread::sleep_for(std::chrono::seconds(1));
         std::cout << std::this_thread::get_id() << ": " << count << '\n';

@@ -5,10 +5,10 @@ void is_prime(long x, std::promise<bool> prom) {
     std::cout << "Calculating. Please, wait...\n";
     for (int i=2; i<x; ++i)
         if (x%i == 0) {
-            prom.set_value(false);
+            // prom.set_value(false);
             return;
         }
-    prom.set_value(true);
+    // prom.set_value(true);
 }
 
 int main () {

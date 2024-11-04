@@ -13,9 +13,9 @@ int main() {
     
     std::thread t(&hello, msg, std::ref(id));
     
-    while (id ==0) { 
-        std::this_thread::sleep_for(std::chrono::milliseconds(50)); 
-    }
+    // while (id ==0) { 
+    //     std::this_thread::sleep_for(std::chrono::milliseconds(50)); 
+    // }
     
     std::cout << "thread id=" << id << std::endl;
     t.join();
