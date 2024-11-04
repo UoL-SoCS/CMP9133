@@ -1,9 +1,18 @@
 .vscode
+
+# Allow specific file types to be committed
+!*.cpp
+!*.h
+!*.md
+
+# Ignore all executables without extensions
+# *
+
+# # Ignore specific extensions associated with executables
+*.exe
+*.out
+*.elf
+
+# Ignore all output folders
 **/output/
 
-# Ignore all executables
-**
-!**/*.cpp
-!**/*.h
-!**/*.md
-``
